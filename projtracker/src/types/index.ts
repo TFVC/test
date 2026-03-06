@@ -11,7 +11,7 @@ export interface Milestone {
 }
 
 export interface Update {
-  id?: string;
+  id: string;
   date: string;
   title: string;
   authors: { name: string; avatar: string }[];
@@ -21,10 +21,17 @@ export interface Update {
 }
 
 export interface TeamMember {
-  id?: string;
+  id: string;
   name: string;
   role: string;
   avatar: string;
+  links?: {
+    github?: string;
+    website?: string;
+    twitter?: string;
+  };
+}
+
 export interface Achievement {
   title: string;
   desc: string;
