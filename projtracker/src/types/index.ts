@@ -1,7 +1,7 @@
 export type MilestoneStatus = "completed" | "in-progress" | "pending";
 
 export interface Milestone {
-  id?: string;
+  id: string;
   title: string;
   date: string; // YYYY-MM-DD
   description: string;
