@@ -1,0 +1,90 @@
+{
+  "brand": "StellarFlow",
+  "nav": {
+    "philosophy": "Philosophy",
+    "intro": "Definition",
+    "value": "Value",
+    "scenarios": "Scenarios",
+    "experience": "Experience",
+    "watchIntro": "Watch Intro",
+    "startNow": "Start Now"
+  },
+  "hero": {
+    "title": "Unknown Finds Direction",
+    "subtitle": "Redefine workflows: connect people, resources, and opportunities into sustainable outcome paths—turn collaboration from “talked” into “done.”",
+    "startNow": "Start Now",
+    "watchIntro": "Watch Intro (60s)",
+    "floatingNodes": {
+      "team": "Team",
+      "connected": "Connected",
+      "path": "Path",
+      "defined": "Defined"
+    }
+  },
+  "philosophy": {
+    "title": "Stars · Connection · Flow",
+    "poem": [
+      "Stars scattered, lone lights struggle against the long night,",
+      "All things have spirit, yet trapped behind silent walls.",
+      "We draw the lines, threading the needle,",
+      "Gathering the points into a flowing riverbed.",
+      "No longer a pile of fragments, but the growth of wisdom,",
+      "Emerging in connection, flowing to the unknown distance.",
+      "StellarFlow, let value flow like water, naturally."
+    ]
+  },
+  "intro": {
+    "title": "What is StellarFlow?",
+    "subtitle": "A Value Network Connecting Islands",
+    "desc": "StellarFlow is a value chain network based on 'fractal visualization' and 'multi-agent collaboration'. It's not just a tool, but an ecosystem that connects scattered knowledge, connections, and needs (Stars) through smart contracts and visual paths (Flow)."
+  },
+  "value": {
+    "title": "Core Value",
+    "items": [
+      {
+        "title": "From Chaos to Order",
+        "desc": "Organize fragmented information and tasks into clear visual paths through fractal structures."
+      },
+      {
+        "title": "From Isolation to Symbiosis",
+        "desc": "Break down barriers between departments and roles, allowing seamless collaboration across the value stream."
+      },
+      {
+        "title": "From Storage to Emergence",
+        "desc": "Knowledge is no longer static storage, but reused and added value in flow, emerging new opportunities."
+      }
+    ]
+  },
+  "scenarios": {
+    "title": "Typical Scenarios",
+    "items": [
+      {
+        "title": "Knowledge Management",
+        "desc": "Precipitate individual or team experience into standardized 'flows', ready for newcomers."
+      },
+      {
+        "title": "Agile Collaboration",
+        "desc": "Find experts in the public domain, quickly form temporary teams, and settle automatically by results."
+      },
+      {
+        "title": "Idea Incubation",
+        "desc": "Capture fleeting inspirations (Stars), associate existing resources, and hatch viable projects."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Start Your Experience",
+    "desc": "No complex learning needed. Just follow your intuition: click, connect, flow.",
+    "cta": "Enter Stellar Network"
+  },
+  "footer": {
+    "desc": "Connect every tiny value, gather into a force that changes the world.",
+    "product": "Product",
+    "support": "Support",
+    "ready": "Ready?",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "rights": "All rights reserved."
+  }
+}
