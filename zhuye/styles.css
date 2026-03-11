@@ -1301,6 +1301,12 @@ a {
   }
 }
 
+@media (max-width: 768px) {
+  .cooperate-contact {
+    display: none !important;
+  }
+}
+
 @media (min-width: 961px) {
   .mobile-menu-btn {
     display: none;
