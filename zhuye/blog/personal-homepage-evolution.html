@@ -59,7 +59,7 @@
     <meta property="og:title" content="基于应用能力的个人主页功能演化路径" />
     <meta property="og:description" content="本文梳理个人主页功能的演化历程，并以使用者应用能力作为核心驱动逻辑加以剖析。区别于技术迭代视角，本文认为个人主页的形态更取决于使用者驾驭数字工具的能力。从最初的文档编辑，到借助AI编程建站，再到理解协议并管理数字资产——应用能力的每一次跃升，都推动个人主页从单纯的信息展示向综合价值载体发生根本性转变。" />
     <meta property="og:type" content="article" />
-    <meta property="og:image" content="../assets/avatar.png" />
+    <meta property="og:image" content="https://bobby.dmdii.top/assets/avatar.png" />
     <meta property="og:url" content="https://bobby.dmdii.top/blog/personal-homepage-evolution.html" />
 
     <style>
@@ -274,16 +274,59 @@
       </div>
     </footer>
 
+    <!-- Builder Modal (Same as index.html) -->
+    <div id="builder-modal" class="modal">
+      <div class="modal-content" style="max-width: 400px; text-align: center;">
+        <span class="close-modal" style="position: absolute; right: 16px; top: 16px; font-size: 24px; cursor: pointer;">&times;</span>
+        <div style="padding: 20px;">
+          <h2 style="margin-bottom: 16px;">构建你的个人主页</h2>
+          <img src="../assets/banner-02.png" alt="星辰知流" style="width: 80%; border-radius: 8px; margin-bottom: 12px; border: 2px solid var(--ink);">
+          <p style="color: #4b5563; font-size: 14px; margin-bottom: 20px;">
+            扫码加入知识中心，学个人主页改版与发布，还可获个人主页定制1次
+          </p>
+          <button type="button" class="btn primary" id="download-btn" style="min-width: 160px;">下载源代码</button>
+        </div>
+      </div>
+    </div>
+
     <!-- 引入模态框相关的 JavaScript (与主页一致) -->
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         const buildBtn = document.getElementById('build-btn');
-        // 在文章页，我们可能没有 builder-modal 结构，这里直接跳转回主页触发或提示
-        // 简单处理：跳转回主页并带上参数（实际项目中可能需要更复杂的逻辑）
-        if (buildBtn) {
+        const modal = document.getElementById('builder-modal');
+        const closeModal = document.querySelector('.close-modal');
+        const downloadBtn = document.getElementById('download-btn');
+
+        if (buildBtn && modal) {
           buildBtn.addEventListener('click', () => {
-            window.location.href = '../index.html?action=build';
+            modal.style.display = 'flex';
           });
+
+          if (closeModal) {
+            closeModal.addEventListener('click', () => {
+              modal.style.display = 'none';
+            });
+          }
+
+          window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+              modal.style.display = 'none';
+            }
+          });
+
+          if (downloadBtn) {
+            downloadBtn.addEventListener('click', () => {
+              // Just trigger download of the pre-built zip file
+              const a = document.createElement('a');
+              a.href = '../zhuye_source.zip'; // Relative path adjusted
+              a.download = 'zhuye_source.zip';
+              document.body.appendChild(a);
+              a.click();
+              document.body.removeChild(a);
+              
+              modal.style.display = 'none';
+            });
+          }
         }
       });
     </script>
