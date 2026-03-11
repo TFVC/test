@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>晨冲冲（晨曦） - 学习与思考</title>
+    <link>https://go.dmdii.top</link>
+    <description>专注协同方法研究与传感行业实践，记录个人学习与思考。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 20 Mar 2024 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://go.dmdii.top/feed.xml" rel="self" type="application/rss+xml" />
+    
+    <!-- 示例文章条目 -->
+    <item>
+      <title>基于应用能力的个人主页功能演化路径</title>
+      <link>https://go.dmdii.top/blog/personal-homepage-evolution.html</link>
+      <guid>https://go.dmdii.top/blog/personal-homepage-evolution.html</guid>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0800</pubDate>
+      <description>本报告梳理了个人主页功能的演化历程，以使用者应用能力为核心驱动逻辑。从最初的文档编辑，到借助AI编程建站，再到理解协议并管理数字资产，每一次能力跃升都推动主页从信息展示向价值载体转变。</description>
+    </item>
+    
+  </channel>
+</rss>

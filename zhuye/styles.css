@@ -991,7 +991,7 @@ a {
 
 .footer {
   border-top: 3px solid var(--ink);
-  padding: 24px 0 36px;
+  padding: 14px 0 21px; /* Reduced to ~60% of original (24px 0 36px) */
   color: #4b5563;
   font-size: 12px;
 }

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- ================================================================= -->
+    <!-- ⭐ 发布文章前的 5 个必改项 (详细修改指南) ⭐                         -->
+    <!-- ================================================================= -->
+
+    <!-- 1. Description (页面描述) -->
+    <!-- 用途：这是给搜索引擎（百度/Google）和 AI 助手看的摘要。它决定了用户在搜索结果里看到的"简介"。 -->
+    <!-- 案例：content="本文详细复盘了红外测温项目的技术难点，分享了从实验室到量产的3个关键经验。" -->
+    <meta name="description" content="[请修改] 这里填写文章的简短摘要（100-150字）。例如：本文探讨了...，分享了..." />
+    
+    <!-- 2. Title (页面标题) -->
+    <!-- 用途：浏览器标签页显示的标题，也是搜索结果最醒目的蓝色大字。 -->
+    <!-- 格式建议：文章主标题 - 你的名字 -->
+    <title>[请修改] 文章标题 - 晨冲冲（晨曦）</title>
+
+    <!-- 3. Canonical (规范链接) -->
+    <!-- 用途：告诉搜索引擎"这篇文章的首发/原始出处在哪里"。防止内容重复导致降权。 -->
+    <!-- 场景 A (原创首发)：填入本页在你自己网站的最终链接。例如：https://go.dmdii.top/blog/article-01.html -->
+    <!-- 场景 B (公众号转载)：填入微信公众号文章的链接。例如：https://mp.weixin.qq.com/s/xxxxxx -->
+    <!-- <link rel="canonical" href="[请修改] https://..." /> -->
+
+    <link rel="icon" type="image/png" href="../assets/avatar.png" />
+    <link rel="stylesheet" href="../styles.css" />
+    
+    <!-- 4. JSON-LD (结构化数据) -->
+    <!-- 用途：专门喂给 AI 和高级搜索引擎的数据包，让它们能精准提取文章信息。 -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "[请修改] 文章标题", 
+        "image": "../assets/avatar.png", 
+        "author": {
+          "@type": "Person",
+          "name": "晨冲冲（晨曦）",
+          "url": "../index.html"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "晨冲冲的个人主页",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "../assets/avatar.png"
+          }
+        },
+        "datePublished": "[请修改] 2024-03-20", 
+        "dateModified": "[请修改] 2024-03-20", 
+        "description": "[请修改] 复制上面的 meta description 内容到这里" 
+      }
+    </script>
+
+    <!-- 5. Open Graph (社交分享卡片) -->
+    <!-- 用途：当你把链接发到微信、朋友圈、Twitter时，显示的卡片预览图和文字。 -->
+    <meta property="og:title" content="[请修改] 文章标题 - 晨冲冲" />
+    <meta property="og:description" content="[请修改] 复制 meta description 内容到这里" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="../assets/avatar.png" />
+    <meta property="og:url" content="[请修改] 当前页面的完整链接" />
+
+    <style>
+      /* 文章页专用样式 */
+      .article-container {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      .article-header {
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      .article-title {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        line-height: 1.3;
+      }
+      .article-meta {
+        color: #6b7280;
+        font-size: 14px;
+      }
+      .article-content {
+        font-size: 18px;
+        line-height: 1.8;
+        color: #374151;
+      }
+      .article-content h2 {
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: #111827;
+      }
+      .article-content p {
+        margin-bottom: 24px;
+      }
+      .article-content blockquote {
+        border-left: 4px solid var(--primary);
+        padding-left: 20px;
+        color: #4b5563;
+        font-style: italic;
+        margin: 24px 0;
+      }
+      .back-link {
+        display: inline-block;
+        margin-bottom: 30px;
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 500;
+      }
+      .back-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 复用 Topbar -->
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="brand"><a href="../index.html" style="text-decoration:none; color:inherit;">晨冲冲（晨曦）</a></div>
+        <nav class="nav">
+          <a href="../index.html#who">我是谁</a>
+          <a href="../index.html#timeline">做了什么</a>
+          <a href="../index.html#next">要做什么</a>
+          <a href="../index.html#contact">合作抓手</a>
+          <a href="../index.html#learning" style="display: none;">学习与思考</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="article-container">
+      <a href="../index.html" class="back-link">← 返回首页</a>
+      
+      <article>
+        <header class="article-header">
+          <h1 class="article-title">这里是文章标题</h1>
+          <div class="article-meta">
+            <span>发布于 2024年3月20日</span> · 
+            <span>分类：个人思考</span>
+          </div>
+        </header>
+
+        <div class="article-content">
+          <!-- 在这里粘贴你的内容 (可以是转换后的 HTML) -->
+          <p>这里是文章正文。建议使用 &lt;p&gt; 标签包裹段落。</p>
+          
+          <h2>这是一个小标题</h2>
+          <p>更多内容...</p>
+          
+          <blockquote>
+            这里是引用内容，适合放金句。
+          </blockquote>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <span>本主页基于<a href="./personal-homepage-evolution.html" class="footer-link" target="_blank">"个人主页功能标准3.0版本"</a>设计</span>
+          <button id="build-btn" class="btn-build">构建你的个人主页</button>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- 引入模态框相关的 JavaScript (与主页一致) -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const buildBtn = document.getElementById('build-btn');
+        // 在文章页，我们可能没有 builder-modal 结构，这里直接跳转回主页触发或提示
+        // 简单处理：跳转回主页并带上参数（实际项目中可能需要更复杂的逻辑）
+        if (buildBtn) {
+          buildBtn.addEventListener('click', () => {
+            window.location.href = '../index.html?action=build';
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- ================================================================= -->
+    <!-- ⭐ 发布文章前的 5 个必改项 (详细修改指南) ⭐                         -->
+    <!-- ================================================================= -->
+
+    <!-- 1. Description (页面描述) -->
+    <!-- 用途：这是给搜索引擎（百度/Google）和 AI 助手看的摘要。它决定了用户在搜索结果里看到的"简介"。 -->
+    <!-- 案例：content="本文详细复盘了红外测温项目的技术难点，分享了从实验室到量产的3个关键经验。" -->
+    <meta name="description" content="本文梳理个人主页功能的演化历程，并以使用者应用能力作为核心驱动逻辑加以剖析。区别于技术迭代视角，本文认为个人主页的形态更取决于使用者驾驭数字工具的能力。从最初的文档编辑，到借助AI编程建站，再到理解协议并管理数字资产——应用能力的每一次跃升，都推动个人主页从单纯的信息展示向综合价值载体发生根本性转变。" />
+    
+    <!-- 2. Title (页面标题) -->
+    <!-- 用途：浏览器标签页显示的标题，也是搜索结果最醒目的蓝色大字。 -->
+    <!-- 格式建议：文章主标题 - 你的名字 -->
+    <title>基于应用能力的个人主页功能演化路径</title>
+
+    <!-- 3. Canonical (规范链接) -->
+    <!-- 用途：告诉搜索引擎"这篇文章的首发/原始出处在哪里"。防止内容重复导致降权。 -->
+    <!-- 场景 A (原创首发)：填入本页在你自己网站的最终链接。例如：https://go.dmdii.top/blog/article-01.html -->
+    <!-- 场景 B (公众号转载)：填入微信公众号文章的链接。例如：https://mp.weixin.qq.com/s/xxxxxx -->
+    <link rel="canonical" href="https://bobby.dmdii.top/blog/personal-homepage-evolution.html" />
+
+    <link rel="icon" type="image/png" href="../assets/avatar.png" />
+    <link rel="stylesheet" href="../styles.css" />
+    
+    <!-- 4. JSON-LD (结构化数据) -->
+    <!-- 用途：专门喂给 AI 和高级搜索引擎的数据包，让它们能精准提取文章信息。 -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "基于应用能力的个人主页功能演化路径", 
+        "image": "../assets/avatar.png", 
+        "author": {
+          "@type": "Person",
+          "name": "晨冲冲（晨曦）",
+          "url": "../index.html"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "晨冲冲的个人主页",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "../assets/avatar.png"
+          }
+        },
+        "datePublished": "2026-03-11", 
+        "dateModified": "2026-03-11", 
+        "description": "本文梳理个人主页功能的演化历程，并以使用者应用能力作为核心驱动逻辑加以剖析。区别于技术迭代视角，本文认为个人主页的形态更取决于使用者驾驭数字工具的能力。从最初的文档编辑，到借助AI编程建站，再到理解协议并管理数字资产——应用能力的每一次跃升，都推动个人主页从单纯的信息展示向综合价值载体发生根本性转变。" 
+      }
+    </script>
+
+    <!-- 5. Open Graph (社交分享卡片) -->
+    <!-- 用途：当你把链接发到微信、朋友圈、Twitter时，显示的卡片预览图和文字。 -->
+    <meta property="og:title" content="基于应用能力的个人主页功能演化路径" />
+    <meta property="og:description" content="本文梳理个人主页功能的演化历程，并以使用者应用能力作为核心驱动逻辑加以剖析。区别于技术迭代视角，本文认为个人主页的形态更取决于使用者驾驭数字工具的能力。从最初的文档编辑，到借助AI编程建站，再到理解协议并管理数字资产——应用能力的每一次跃升，都推动个人主页从单纯的信息展示向综合价值载体发生根本性转变。" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="../assets/avatar.png" />
+    <meta property="og:url" content="https://bobby.dmdii.top/blog/personal-homepage-evolution.html" />
+
+    <style>
+      /* 文章页专用样式 */
+      .article-container {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      .article-header {
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      .article-title {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        line-height: 1.3;
+      }
+      .article-meta {
+        color: #6b7280;
+        font-size: 14px;
+      }
+      .article-content {
+        font-size: 18px;
+        line-height: 1.8;
+        color: #374151;
+      }
+      .article-content h2 {
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: #111827;
+        font-weight: 600;
+      }
+      .article-content p {
+        margin-bottom: 24px;
+      }
+      .article-content strong, .article-content b {
+        color: #111827;
+        font-weight: 600;
+      }
+      .article-content blockquote {
+        border-left: 4px solid var(--primary);
+        padding-left: 20px;
+        color: #4b5563;
+        font-style: italic;
+        margin: 24px 0;
+        background-color: #f9fafb;
+        padding: 16px 20px;
+        border-radius: 0 8px 8px 0;
+      }
+      .article-content ul, .article-content ol {
+        margin-bottom: 24px;
+        padding-left: 24px;
+      }
+      .article-content li {
+        margin-bottom: 8px;
+      }
+      
+      /* Phase Style from user content */
+      .phase {
+        margin: 32px 0 40px 0;
+        padding: 24px;
+        background-color: #f8fafc;
+        border-radius: 12px;
+        border: 1px solid #e2e8f0;
+      }
+      .phase-title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        color: #0f172a;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .phase-title span {
+        background-color: var(--primary);
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 4px 12px;
+        border-radius: 999px;
+      }
+      .summary {
+        background-color: #eff6ff;
+        padding: 24px;
+        border-radius: 12px;
+        margin-bottom: 32px;
+        border-left: 4px solid var(--link);
+      }
+      .summary p {
+        margin-bottom: 0;
+        color: #1e40af;
+      }
+      .footer-note {
+        margin-top: 48px;
+        padding-top: 32px;
+        border-top: 2px dashed #e5e7eb;
+        text-align: center;
+        font-size: 14px;
+        color: #9ca3af;
+      }
+      
+      .back-link {
+        display: inline-block;
+        margin-bottom: 30px;
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 500;
+      }
+      .back-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 复用 Topbar -->
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="brand"><a href="../index.html" style="text-decoration:none; color:inherit;">晨冲冲（晨曦）</a></div>
+        <nav class="nav">
+          <a href="../index.html#who">我是谁</a>
+          <a href="../index.html#timeline">做了什么</a>
+          <a href="../index.html#next">要做什么</a>
+          <a href="../index.html#contact">合作抓手</a>
+          <a href="../index.html#learning" style="display: none;">学习与思考</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="article-container">
+      <a href="../index.html" class="back-link">← 返回首页</a>
+      
+      <article>
+        <header class="article-header">
+          <h1 class="article-title">基于应用能力的个人主页功能演化路径</h1>
+          <div class="article-meta">
+            <span>发布于 2026年3月11日</span> · 
+            <span>分类：个人思考</span>
+          </div>
+        </header>
+
+        <div class="article-content">
+          <!-- 摘要 --> 
+          <div class="summary"> 
+              <p><strong>摘要：</strong>本报告旨在梳理个人主页功能的演化历程，并以<strong>使用者应用能力</strong>作为核心驱动逻辑加以剖析。区别于单纯的技术迭代视角，我们认为个人主页的形态更取决于使用者驾驭数字工具的能力。从最初的文档编辑，到借助 AI 编程建站，再到理解协议并管理数字资产——应用能力的每一次跃升，都推动个人主页从单纯的信息展示向综合价值载体发生根本性转变。</p> 
+          </div> 
+  
+          <!-- 第一章 --> 
+          <h2>第一章 演化逻辑的核心：应用能力</h2> 
+          <p>个人主页并非孤立的技术产物，它是个体数字能力的直接投射。随着互联网基础设施的日益完善，决定个人主页形态的关键因素，不再仅仅是“技术上能做什么”，而更多地体现为“使用者会用什么”。本文以应用能力的递进为主线，将演化过程划分为四个关键阶段，每个阶段都对应着一种核心能力的觉醒与成熟。</p> 
+  
+          <!-- 第二章 --> 
+          <h2>第二章 应用能力驱动的四个演化阶段</h2> 
+  
+          <!-- 第一阶段 --> 
+          <div class="phase"> 
+              <div class="phase-title">第一阶段 <span>零代码基础的文档编辑</span></div> 
+              <p><strong>在线文档时代</strong>：在这一阶段，使用者的应用能力主要停留在<strong>文档编辑</strong>层面。对于绝大多数用户而言，代码是一道难以逾越的鸿沟，他们所熟悉的仅限于在文字处理软件中输入内容、调整格式、插入图片。</p> 
+              <p>因此，这一时期的个人主页，本质上是一个<strong>数字化的公告板</strong>，功能极度精简，仅作为信息的静态容器存在。无论是早期的静态 HTML 页面，还是后来的博客平台，其核心逻辑都是“所见即所得”的文档发布。用户不关心底层的运行机制，也不具备定制交互逻辑的能力。个人主页在此完成了最基础的使命：让个体在互联网上拥有一个可被访问的展示面——尽管它往往是单向、静态且高度依赖平台提供的标准化模板。</p> 
+          </div> 
+  
+          <!-- 第二阶段 --> 
+          <div class="phase"> 
+              <div class="phase-title">第二阶段 <span>借助 AI 编程建设个人网站</span></div> 
+              <p><strong>独立站点的崛起</strong>：随着人工智能技术的突破，特别是大语言模型在编程领域的应用，使用者的能力边界被极大地拓展了。这一阶段的核心特征是<strong>AI 辅助编程</strong>。用户不再需要经历漫长的代码学习曲线，只需通过自然语言描述需求，AI 便能协助生成代码、构建页面甚至调试逻辑。</p> 
+              <p>这种能力的跃升，直接促成了个人主页向<strong>功能型独立站点</strong>的进化。个人主页不再局限于展示静态文本，开始具备动态交互、个性化布局乃至复杂的业务逻辑。使用者可以根据自己的审美和实际需求，利用 AI 构建出独一无二的数字空间。从简单的留言板到精细的个人作品集展示系统，AI 让“个人建站”的门槛大幅降低，使得个人主页真正成为展现个性与创造力的舞台，而不仅仅是内容的堆砌。</p> 
+          </div> 
+  
+          <!-- 第三阶段 --> 
+          <div class="phase"> 
+              <div class="phase-title">第三阶段 <span>理解协议的意义与融合</span></div> 
+              <p><strong>联网节点的专业化</strong>：当用户不再满足于孤立的展示，开始思考如何更好地融入互联网生态时，应用能力便进入了第三个阶段：<strong>对协议标准的理解与运用</strong>。这一阶段的使用者开始意识到，互联网的本质是连接，而连接的基石是协议。</p> 
+              <p>此时的个人主页，开始从“孤岛”演变为<strong>可信的联网节点</strong>。使用者主动将主页与各种开放协议（如 RSS、ActivityPub、OpenID 等）进行融合，这不仅是为了内容的自动化分发，更是为了实现跨平台的身份互通与专业度证明。通过遵循标准协议，个人主页能够与其他系统无缝对接，实现数据的自由流动。例如，通过语义化标记提升在搜索引擎中的权重，或者通过去中心化社交协议与其他站点互动。这一阶段的演化，标志着个人主页从“自娱自乐”走向了“专业互联”，成为用户在数字世界中建立专业声誉和社交网络的重要枢纽。</p> 
+          </div> 
+  
+          <!-- 第四阶段 --> 
+          <div class="phase"> 
+              <div class="phase-title">第四阶段 <span>理解个人数字资产的权益</span></div> 
+              <p><strong>价值结算的平台化</strong>：演化的最高阶段，是使用者对<strong>数字资产权益</strong>的深刻理解。用户开始认识到，个人主页不仅仅是信息的载体，更是个人价值的归宿——从身份标识、创作内容到社交关系，这一切都是属于个体的数字资产。</p> 
+              <p>在这个阶段，个人主页的功能演化为<strong>个人价值的结算与确权中心</strong>。它不再仅仅展示“我是谁”和“我做了什么”，更重要的是确认“这些价值属于我”。通过引入区块链技术、加密签名或去中心化身份（DID），个人主页能够对创作成果进行确权，并实现价值的直接流转。无论是文章、代码还是艺术作品，都能在主页上被标记、追踪甚至交易。个人主页由此演变为一个微型的“个人银行”或“交易所”，承载着个体的数字主权，让个体在数字世界中创造的每一分价值真正回归自身。</p> 
+          </div> 
+  
+          <!-- 第三章 --> 
+          <h2>第三章 总结与展望</h2> 
+          <p>回顾这四个阶段，我们可以清晰地看到一条<strong>从“被动使用”到“主动驾驭”，从“信息展示”到“价值主权”</strong> 的演化路径：</p> 
+          <ul> 
+              <li><strong>文档编辑</strong>阶段解决了“存在”的问题；</li> 
+              <li><strong>AI 编程</strong>阶段解决了“创造”的问题；</li> 
+              <li><strong>协议融合</strong>阶段解决了“连接”的问题；</li> 
+              <li><strong>资产权益</strong>阶段解决了“价值”的问题。</li> 
+          </ul> 
+          <p>未来的个人主页，将是这四种能力的集大成者：它既有文档编辑的便捷性，又有 AI 编程的强大功能，同时遵循开放协议以保持连接，并坚守数字主权以保障价值。对于每一个数字公民而言，不断提升自身的应用能力，将是构建理想个人主页、掌握数字命运的关键所在。</p> 
+  
+          <!-- 优雅结尾 --> 
+          <div class="footer-note"> 
+              —— 基于应用能力视角的个人主页演化白皮书 · 阅读版 —— 
+          </div> 
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <span>本主页基于<a href="./personal-homepage-evolution.html" class="footer-link" target="_blank">"个人主页功能标准3.0版本"</a>设计</span>
+          <button id="build-btn" class="btn-build">构建你的个人主页</button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 引入模态框相关的 JavaScript (与主页一致) -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const buildBtn = document.getElementById('build-btn');
+        // 在文章页，我们可能没有 builder-modal 结构，这里直接跳转回主页触发或提示
+        // 简单处理：跳转回主页并带上参数（实际项目中可能需要更复杂的逻辑）
+        if (buildBtn) {
+          buildBtn.addEventListener('click', () => {
+            window.location.href = '../index.html?action=build';
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
