@@ -4,7 +4,7 @@
     "role": "专注协同方法与产业实践",
     "avatar": "/images/team/chenchongchong.png",
     "links": {
-      "website": "https://bobby.dmdii.top"
+      "website": "https://bobby.dmdii.top/"
     },
     "id": "team_chen"
   },
@@ -63,7 +63,7 @@
     "id": "team_jianying"
   },
   {
-    "name": "⭐欢迎合作⭐",
+    "name": "协作伙伴",
     "role": "一群人走得远",
     "avatar": "/images/team/collaborators.png",
     "links": {
@@ -76,7 +76,7 @@
     "role": "个人智能工作站",
     "avatar": "/images/team/stellarflow.png",
     "links": {
-      "website": "https://stellarflow.dmdii.top/"
+      "website": "#"
     },
     "id": "team_stellarflow"
   },
