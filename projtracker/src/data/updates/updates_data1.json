@@ -1,0 +1,16 @@
+
+[
+  {
+    "type": "bi-weekly",
+    "date": "2026.03.01 - 03.16",
+    "title": "个人工作台公测版发布",
+    "description": "星辰知流个人工作台V263.1.0公测版发布\n传感说知识库信息更新",
+    "tags": ["基础层", "行业层"],
+    "authors": [
+      {
+        "name": "晨冲冲",
+        "avatar": "/images/team/chenchongchong.png"
+      }
+    ]
+  }
+]
