@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "OPC项目实践 - 进展看板",
+  title: "项目实践 - 进展看板",
   description: "Project progress tracking and documentation",
 };
 
@@ -20,8 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased bg-background text-foreground`}>
-        {children}
+      <body className={`${inter.variable} antialiased bg-background text-foreground`}>        {children}
       </body>
     </html>
   );
