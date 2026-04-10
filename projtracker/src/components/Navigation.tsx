@@ -73,7 +73,7 @@ export function Navigation() {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
           <div className="text-lg font-bold uppercase tracking-tighter group-hover:text-primary transition-colors">
-            OPC项目实践 - 进展看板
+            项目实践 - 进展看板
           </div>
           <div className="flex items-center gap-1.5 px-2 py-0.5 bg-muted/30 rounded-full border border-black/5">
              <span className="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
